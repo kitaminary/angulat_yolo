@@ -1,3 +1,8 @@
-import {InjectionToken} from '@angular/core';
+import { InjectionToken } from '@angular/core';
 
-export const COLLEGE_ABOUT$ = new InjectionToken('About college');
+import { Observable } from 'rxjs';
+import { AboutInterface } from './about.interface';
+
+export const COLLEGE_ABOUT$ = new InjectionToken<Observable<AboutInterface>>(
+  'About college'
+);
